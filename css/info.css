@@ -1,0 +1,38 @@
+body{
+    background: linear-gradient(rgba(59, 60, 63, 0.5), rgba(48, 48, 48, 0.5)),
+    url(bg3.jpeg);
+    background-size: cover;
+}
+.img{
+    display: block;
+    position: fixed ;
+    align-items: center;
+    padding-left:18%;
+    size: 9px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+.txt{
+    padding-left: 15vh;
+    padding-top: 40vh;
+    padding-right: 15vh;
+    color: rgb(216, 205, 205);
+    text-align: center;
+    font-family: 'roboto';
+    font-weight: 400;
+    font-size: 190%;
+} 
+@media screen and (max-width: 1366px) {
+    html {
+      font-size: 70%;
+    }
+  }
+@media screen and (max-width: 1023px) {
+html {
+      font-size: 60%;
+  }
+}
+@media screen and (max-width: 767px) {
+ html {
+        font-size: 50%;
+      }
+}

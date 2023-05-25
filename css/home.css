@@ -1,0 +1,195 @@
+*{
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  outline: none; border: none;
+  text-decoration: none;
+  transition: all .2s linear;
+}
+.Featured {
+  color: black;
+}
+.Featured img {
+  width: 70%;
+  height: auto;
+}
+.Featured h1 {
+  color: black;
+  text-align: center;
+  font-size: 250%;
+}
+.Featured {
+  max-width: 1200px;
+  margin:0 auto;
+  padding: 3rem 2rem;
+}
+.Featured .product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+.Featured .product-container .CardP {
+  text-align: center;
+  padding: 3rem 2rem;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  outline: .1rem solid #ccc;
+  outline-offset: -1.5rem;
+  cursor: pointer;
+}
+.Featured .product-container .CardP:hover {
+  outline: .2rem solid #222;
+  outline-offset: 0;
+}
+.Featured .product-container .CardP:hover img {
+  transform: scale(.9);
+}
+.Featured .product-container .CardP .price {
+  font-size: 1.5rem;
+}
+.Featured .product-container .CardP .price::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.2rem;
+  border-bottom: 0.1rem solid black;
+  transform: scale(0);
+  transition: 0.2s linear;
+}
+.Featured .viewmore #viewmore { 
+  margin-top: 20px;
+  text-align: center;
+  display: inline-block;
+  padding: 10px 30px;
+  border: 1px solid black;
+  color: aliceblue;
+  font-size: 16px;
+  background-color: rgb(19, 19, 19);
+  cursor: pointer;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+.Featured .viewmore #viewmore:hover {
+  background-color: rgb(0, 0, 0);
+} 
+.Featured .viewmore {
+  display: flex;
+  justify-content: center;
+}
+.Featured .product-container .CardP:hover .price::after {
+  transform: scaleX(0.5);
+}
+.Featured .product-container .CardP:hover h3 {
+  color: #111777;
+}
+.limited h1 {
+  color: black;
+  text-align: center;
+  font-size: 250%;
+}
+.limited {
+  max-width: 1200px;
+  margin:0 auto;
+  padding: 3rem 2rem;
+  color: rgb(118, 152, 138);
+}
+.limited .limited-container .limited-card img {
+  width: 35%;
+  height: auto;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+.limited .limited-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+.limited .limited-container .limited-card {
+  text-align: center;
+  padding: 3rem 2rem;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.402);
+  outline: .1rem solid #000000;
+  outline-offset: -1.5rem;
+  cursor: pointer;
+  background: linear-gradient(rgba(194, 194, 194, 0.285), rgba(226, 230, 255, 0.285)) , url(bg4.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.limited .limited-container .limited-card:hover {
+  outline: .2rem solid #222;
+  outline-offset: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.555), rgba(74, 74, 74, 0.555)) , url(bg4.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.limited .limited-container .limited-card:hover img {
+  transform: scale(.9)
+}
+.limited .limited-container .limited-card h2 { 
+  font-size: 200%;
+  text-shadow: 0 .5rem 1rem rgba(255, 255, 255, 0.733);;
+}
+.limited .limited-container .limited-card:hover h2 {
+  color: khaki;
+  text-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.733);;
+
+}
+.limited .limited-container .limited-card .limited-price {
+  font-size: 2rem;
+  text-shadow: 0 .5rem 1rem rgba(255, 255, 255, 0.733);;
+  color: rgb(142, 167, 140);
+}
+.limited .limited-container .limited-card:hover .limited-price {
+  text-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.733);;
+}
+
+
+.limited2 {
+  max-width: 1200px;
+  margin:0 auto;
+  padding: 3rem 2rem;
+  color: rgb(255, 255, 255);
+}
+.limited2 .limited-container2 .limited-card2 img {
+  width: 35%;
+  height: auto;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+.limited2 .limited-container2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+.limited2 .limited-container2 .limited-card2 {
+  text-align: center;
+  padding: 3rem 2rem;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.402);
+  outline: .1rem solid #000000;
+  outline-offset: -1.5rem;
+  cursor: pointer;
+  background: linear-gradient(rgba(194, 194, 194, 0.285), rgba(226, 230, 255, 0.285)) , url(bg5.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.limited2 .limited-container2 .limited-card2:hover {
+  outline: .2rem solid #222;
+  outline-offset: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.555), rgba(74, 74, 74, 0.555)) , url(bg5.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.limited2 .limited-container2 .limited-card2:hover img {
+  transform: scale(.9)
+}
+.limited2 .limited-container2 .limited-card2 h2 { 
+  font-size: 200%;
+  text-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.733);;
+}
+.limited2 .limited-container2 .limited-card2:hover h2 {
+  color: khaki;
+  text-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.733);;
+
+}
+.limited2 .limited-container2 .limited-card2 .limited-price2 {
+  font-size: 2rem;
+  text-shadow: 0 .5rem 1rem rgba(255, 255, 255, 0.733);;
+  color: rgb(0, 0, 0);
+}
+.limited2 .limited-container2 .limited-card2:hover .limited-price2 {
+  text-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.733);;
+}

@@ -1,0 +1,116 @@
+:root {
+  --primary: #223654;
+  --background: #0f0f0f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins";
+  background-color: #f0efec;
+  color: aliceblue;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 5%;
+  background-color: rgb(1, 1, 1, 0.8);
+  border-bottom: 1px solid #223654;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999999;
+}
+.navbar .logotoko {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: aliceblue;
+  font-style: italic;
+}
+.navbar .logotoko span {
+  color: var(--primary);
+}
+.navbar .navbar-nav a {
+  color: aliceblue;
+  display: inline-block;
+  font-size: 1.1rem;
+  margin: 0 0.5rem;
+}
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+.navbar .navbarlogo a:hover {
+  color: var(--primary);
+}
+#hamburger-menu {
+  display: none;
+}
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.2rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+.navbar .navbarlogo a {
+  color: lightsteelblue;
+}
+@media screen and (max-width: 1366px) {
+  html {
+    font-size: 70%;
+  }
+}
+@media screen and (max-width: 1023px) {
+  html {
+    font-size: 60%;
+  }
+  #hamburger-menu {
+    display: inline-block;
+  }
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: rgb(255, 255, 255);
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+  .navbar .menu-bar ul {
+    display: block; 
+  }
+  .navbar .navbar-nav .menu-bar .active a {
+    color: var(--background);
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+    text-align: left;
+  } 
+  .navbar .navbar-nav .menu-bar .active a ::after {
+    transform-origin: 0 0;
+  } 
+  .navbar .menu-bar ul li:hover .sub-menu-1 ul {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 50%;
+  }
+}
